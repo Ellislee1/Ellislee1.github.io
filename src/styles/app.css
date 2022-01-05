@@ -34,21 +34,32 @@ header {
     display: inline-block;
 }
 
-.subtitle {
+.subtitle, .subtitle2{
     font-style: italic;
     text-decoration: underline;
     font-size: 1.3em;
     color: rgb(161, 161, 161);
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.3em;
+}
+.subtitle2 {
+    font-size: 1.1em;
 }
 
 #title {
-    font-weight: bold !important;
     font-size: 2.5em !important;
+}
+
+#title, #title2{
+    font-weight: bold !important;
     color: #fff;
 }
 
-.padding-3 {
-    padding: 3;
+#title2 {
+    font-size: 1.5em;
 }
 
 .typewriter h1 {
