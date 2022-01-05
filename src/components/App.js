@@ -38,6 +38,9 @@ function App() {
                 <li class="nav-item">
                   <Link to="/" class="nav-link" href="#">Home</Link>
                 </li>
+                <li class="nav-item">
+                  <Link to="/contact" class="nav-link" href="#">Contact</Link>
+                </li>
               </ul>
               <div class="navbar-right">
                 <a href="./assets/Ellis_Thompson_CV.pdf" download="Ellis Thompson CV.pdf" class="btn btn-outline-light"> Download CV</a>
@@ -55,6 +58,9 @@ function App() {
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <Link to="/" class="nav-link" href="#">Home</Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/contact" class="nav-link" href="#">Contact</Link>
                 </li>
               </ul>
             </div>

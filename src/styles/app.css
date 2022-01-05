@@ -16,6 +16,10 @@ p {
     text-align: justify;
 }
 
+.t-center {
+    text-align: center !important;
+}
+
 header {
     background-color: black;
     padding: 1.5em;
