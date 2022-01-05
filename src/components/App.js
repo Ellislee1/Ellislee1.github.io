@@ -43,7 +43,7 @@ function App() {
                 </li>
               </ul>
               <div class="navbar-right">
-                <a href="./assets/Ellis_Thompson_CV.pdf" download="Ellis Thompson CV.pdf" class="btn btn-outline-light"> Download CV</a>
+                <a href="https://drive.google.com/uc?export=download&amp;id=1Pf1rzJ6c8-tt9JLngzQ8i88FJEGLebB5" download="Ellis Thompson CV.pdf" class="btn btn-outline-light"> Download CV</a>
               </div>
             </div>
         </nav>
@@ -67,7 +67,7 @@ function App() {
           </div>
 
           <div class="row">
-            <div class="d-flex col-12 justify-content-center"><a href="./assets/Ellis_Thompson_CV.pdf" download="Ellis Thompson CV.pdf" class="btn btn-outline-light">Download CV</a></div>
+            <div class="d-flex col-12 justify-content-center"><a href="https://drive.google.com/uc?export=download&amp;id=1Pf1rzJ6c8-tt9JLngzQ8i88FJEGLebB5" download="Ellis Thompson CV.pdf" class="btn btn-outline-light">Download CV</a></div>
           
           </div>
         </div>
