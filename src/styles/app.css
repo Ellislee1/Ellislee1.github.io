@@ -1,64 +1,75 @@
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
 }
-html {
-    background-color: #04151f;
+
+.App {
+    min-height: 100vh;
+    background-color: black;
 }
 
 .page-content {
-    position: relative;
     min-height: 100vh;
 }
 
-.content-wrap{
-    min-height: 80vh;
-    padding-bottom: 2.5rem;
+p {
+    color: rgba(207, 207, 207, 0.699);
+    text-align: justify;
 }
 
-.double-col {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+header {
+    background-color: black;
+    padding: 1.5em;
+}
+
+.navbar-right {
+    margin-left: auto;
+    order: 2;
 }
 
 .content {
-    margin: 0% 8% 0% 8%;
-    padding: 5%;
-    background-color: #C1DBE3;
+    padding: 2em;
 }
 
-p {
-    margin-left: 5%;
+.constrained {
+    display: inline-block;
 }
 
-main {
-    background-color: #388697;
-    /* background-color: #fa8334; */
+.subtitle {
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 1.3em;
+    color: rgb(161, 161, 161);
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    background-color: #04151f;
-}
-
-.nav-colour {
-    background-color: #04151f !important;
-}
-
-h1, h2, h3 {
-    font-family: 'PT Serif', serif;
-    font-size: larger;
-}
-
-.item-header {
+#title {
     font-weight: bold !important;
-    font-size: 1.2em;
+    font-size: 2.5em !important;
+    color: #fff;
 }
 
-.font-italic {
-    font-style: italic !important;
+.padding-3 {
+    padding: 3;
 }
 
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 1.75s steps(30, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
