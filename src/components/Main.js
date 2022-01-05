@@ -34,10 +34,10 @@ function Main() {
                   I'm Ellis, a Ph.D. candidate at George Washington University (Washington, DC), studying Computer Science. I have Masters degree in Computer Science from Swansea University (2021) and currently have a research focus in using Reinforcement Learning for Air Traffic Management (ATM).
                 </p>
                 <p>
-                  My classes focus on related topics with a drive in Machine Learning and AI based modules but I have taken an interest in Programming (C++/C#) and Data Visualisation/Manipulation modules. 
+                  My current advisor is <a href="https://www.seas.gwu.edu/peng-wei" target="blank_">Dr. Peng Wei</a> and my current research projects are investigating ways we can expand and improve how we control air traffic, both commercial and autonomous vehicles, namely through Reinforcement Learning.
                 </p>
                 <p>
-                  My current advisor is <a href="https://www.seas.gwu.edu/peng-wei" target="blank_">Dr. Peng Wei</a> 
+                  My classes focus on related topics with a drive in Machine Learning and AI based modules but I have taken an interest in Programming (C++/C#) and Data Visualisation/Manipulation modules. 
                 </p>
               </div>
             </div>
