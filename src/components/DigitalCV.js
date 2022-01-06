@@ -138,8 +138,16 @@ function Main() {
           <h3>Selected Courseworks</h3>
           <div class="container">
               <div class="row d-flex justify-content-center">
-                  <div class="col-8">
+                  <div class="col-md-8 d-none d-md-flex">
                     <ul class = "list-unstyled double-col">
+                        <li>Machine Learning (Swansea)</li>
+                        <li>Big Data and Data Mining (Swansea)</li>
+                        <li>Data Visualisation (Swansea)</li>
+                        <li>Mathematics for Data Science (Swansea)</li>
+                    </ul>
+                  </div>
+                  <div class="col-12 d-flex d-md-none">
+                    <ul class = "list-unstyled">
                         <li>Machine Learning (Swansea)</li>
                         <li>Big Data and Data Mining (Swansea)</li>
                         <li>Data Visualisation (Swansea)</li>
@@ -154,7 +162,7 @@ function Main() {
           <h3>Skills</h3>
           <div class="container">
                 <div class="row d-flex justify-content-center">
-                  <div class="col-8">
+                  <div class="col-12 col-md-8">
                     <p class="t-center">Python(TensorFlow, PyTorch, SciKitLearn) | C# | Java | C++ | HTML | JavaScript(Node.Js) | Tableu</p>
                   </div>
               </div>
