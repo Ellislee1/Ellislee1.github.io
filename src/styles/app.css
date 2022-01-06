@@ -7,6 +7,16 @@ html {
     background-color: black;
 }
 
+.fab {
+    font-size: 2.25em;
+    color: white;
+}
+
+.btn, .fab {
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+}
+
 .App {
     min-height: 100vh;
     background-color: black;

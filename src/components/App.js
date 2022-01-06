@@ -25,6 +25,7 @@ function App() {
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"></link>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono"></link>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
       </head>
     <div class="page-content">
       <header>
@@ -45,7 +46,9 @@ function App() {
                   <Link to="/cv" class="nav-link" href="#">Digital CV</Link>
                 </li>
               </ul>
-              <div class="navbar-right">
+              <div class="navbar-right d-flex align-items-center">
+                <a href="https://www.linkedin.com/in/ellislee1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ellislee1" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://drive.google.com/uc?export=download&amp;id=1Pf1rzJ6c8-tt9JLngzQ8i88FJEGLebB5" download="Ellis Thompson CV.pdf" class="btn btn-outline-light"> Download CV</a>
               </div>
             </div>
@@ -56,7 +59,7 @@ function App() {
             <div class="col-12 text-center"><Link class="navbar-brand" to="/">Ellis Thompson</Link></div>
           </div>
 
-          <div class="row text-center">
+          <div class="row text-center py-2">
             <div class="col-12 text-center d-flex justify-content-center">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -73,8 +76,14 @@ function App() {
           </div>
 
           <div class="row">
-            <div class="d-flex col-12 justify-content-center"><a href="https://drive.google.com/uc?export=download&amp;id=1Pf1rzJ6c8-tt9JLngzQ8i88FJEGLebB5" download="Ellis Thompson CV.pdf" class="btn btn-outline-light">Download CV</a></div>
-          
+            <div class="d-flex col-12 justify-content-center py-2">
+                <a href="https://www.linkedin.com/in/ellislee1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ellislee1" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="d-flex col-12 justify-content-center py-2"><a href="https://drive.google.com/uc?export=download&amp;id=1Pf1rzJ6c8-tt9JLngzQ8i88FJEGLebB5" download="Ellis Thompson CV.pdf" class="btn btn-outline-light">Download CV</a></div> 
           </div>
         </div>
       </header>
