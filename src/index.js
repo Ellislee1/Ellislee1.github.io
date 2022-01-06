@@ -18,6 +18,7 @@ render(
       <Route path="/" element={<App />}>
         <Route path="/" element={<Main />} />
         <Route path="/contact" element={<Contact />}/>
+        <Route path="/cv" element={<DigitalCV />}/>
       </Route>
     </Routes>
   </BrowserRouter>,

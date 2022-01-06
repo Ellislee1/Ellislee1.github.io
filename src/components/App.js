@@ -41,6 +41,9 @@ function App() {
                 <li class="nav-item">
                   <Link to="/contact" class="nav-link" href="#">Contact</Link>
                 </li>
+                <li class="nav-item">
+                  <Link to="/cv" class="nav-link" href="#">Digital CV</Link>
+                </li>
               </ul>
               <div class="navbar-right">
                 <a href="https://drive.google.com/uc?export=download&amp;id=1Pf1rzJ6c8-tt9JLngzQ8i88FJEGLebB5" download="Ellis Thompson CV.pdf" class="btn btn-outline-light"> Download CV</a>
@@ -61,6 +64,9 @@ function App() {
                 </li>
                 <li class="nav-item">
                   <Link to="/contact" class="nav-link" href="#">Contact</Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/cv" class="nav-link" href="#">Digital CV</Link>
                 </li>
               </ul>
             </div>
