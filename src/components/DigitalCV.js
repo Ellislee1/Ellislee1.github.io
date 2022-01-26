@@ -140,7 +140,8 @@ function Main() {
              <div class="row d-flex justify-content-center">
                  <div class="col-md-8 d-none d-md-flex">
                    <ul class = "list-unstyled double-col">
-                       <li>Machine Learning (Swansea)</li>
+                       <li>Machine Learning (Swansea, GWU)</li>
+                       <li>Artificial Intelligence (GWU)</li>
                        <li>Big Data and Data Mining (Swansea)</li>
                        <li>Data Visualisation (Swansea)</li>
                        <li>Mathematics for Data Science (Swansea)</li>
@@ -149,6 +150,7 @@ function Main() {
                  <div class="col-12 d-flex d-md-none">
                    <ul class = "list-unstyled">
                        <li>Machine Learning (Swansea)</li>
+                       <li>Artificial Intelligence (GWU)</li>
                        <li>Big Data and Data Mining (Swansea)</li>
                        <li>Data Visualisation (Swansea)</li>
                        <li>Mathematics for Data Science (Swansea)</li>
