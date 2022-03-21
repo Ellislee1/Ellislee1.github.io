@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import personal from '../assets/personal.jpg'
- 
+import personal from '../assets/personal.jpg' 
+
 function Main() {
    return (
      <div className="Main">
+       <title>Ellis Thompson: Home</title>
        <div class="padding-3">
          <div class="container">
            <div class="row">
@@ -26,7 +27,7 @@ function Main() {
                < h3 class="subtitle2">Ph.D. Computer Science Student</h3>
              </div>
            </div>
-           <img src={personal} class="mx-auto d-block profile"></img>
+           <img src={personal} class="mx-auto d-block profile" alt=''></img>
          </div>
          {/* <img src="https://drive.google.com/uc?id=1n15Fxm8Mh9qqOYDIpLsD5M1uOTglspwY" class="img-fluid" alt="Me"></img> */}
         

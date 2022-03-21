@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Contact() {
     return (
       <div className="Contact">
+        <title>Ellis Thompson: Contact</title>
           <div class="container px-5">
             <h1 id="title">Contact</h1>
 

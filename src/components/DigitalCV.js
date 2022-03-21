@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Main() {
    return (
      <div className="DigitalCV px-5">
+         <title>Ellis Thompson: CV</title>
          <h1 id="title">Digital CV</h1>
          <a href="https://drive.google.com/uc?export=download&amp;id=1Pf1rzJ6c8-tt9JLngzQ8i88FJEGLebB5" download="Ellis Thompson CV.pdf">Download</a>
          <hr/>

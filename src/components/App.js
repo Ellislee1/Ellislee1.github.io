@@ -1,8 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
-import 'bootstrap/dist/js/bootstrap';
 import '../styles/app.css'
 import { Outlet, Link } from "react-router-dom";
+
+
 
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
   crossorigin></script>
 
 <script>var Alert = ReactBootstrap.Alert;</script>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"></link>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono"></link>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
@@ -38,6 +37,12 @@ function App() {
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <Link to="/" class="nav-link" href="#">Home</Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/research" class="nav-link" href="#">Research</Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/papers" class="nav-link" href="#">Papers</Link>
                 </li>
                 <li class="nav-item">
                   <Link to="/contact" class="nav-link" href="#">Contact</Link>
@@ -64,6 +69,12 @@ function App() {
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <Link to="/" class="nav-link" href="#">Home</Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/research" class="nav-link" href="#">Research</Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/papers" class="nav-link" href="#">Papers</Link>
                 </li>
                 <li class="nav-item">
                   <Link to="/contact" class="nav-link" href="#">Contact</Link>
