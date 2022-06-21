@@ -40,7 +40,7 @@ function Main() {
                    <h4 class="item-header">Swansea University</h4>
                </div>
                <div class="col justify-right">
-                   <p class="font-italic">Sep 2018 - June 2021</p>
+                   <p class="font-italic">Sep 2018 - July 2021</p>
                </div>
            </div>
            <div class="row">
@@ -69,7 +69,7 @@ function Main() {
                    <h4 class="item-header">University of Chester</h4>
                </div>
                <div class="col justify-right">
-                   <p class="font-italic">Sep 2017 - June 2018</p>
+                   <p class="font-italic">Sep 2017 - July 2018</p>
                </div>
            </div>
            <div class="row">
@@ -107,6 +107,34 @@ function Main() {
                </div>
            </div>
          </div>
+
+         <div class="container">
+           <div class="row">
+               <div class="col">
+                   <h4 class="item-header">Cranfield University</h4>
+               </div>
+               <div class="col justify-right">
+                   <p class="font-italic">Cranfield, UK</p>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col justify-left">
+                   <p class="font-italic">Visiting Ph.D. Student</p>
+               </div>
+               <div class="col">
+                   <p class="font-italic">Jun 2022 - Aug 2022</p>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-12 col-md-8">
+                   <ul>
+                       <li class="j-text">Continuing dissertation research, leveraging strategic deconfliction methods for deconflicting operational
+volumes pre-flight for U-Space operations.</li>
+                   </ul>
+               </div>
+           </div>
+         </div>
+
          <br />
          <div class="container">
            <div class="row">
