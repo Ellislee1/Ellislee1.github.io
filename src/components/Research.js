@@ -21,15 +21,6 @@ function Research() {
 
                 <div class="row">
                     <div class="col-12">
-                        <h4>NASA Competition: Runway Configuration Prediction</h4>
-                    </div>
-                    <div class="col-12 col-sm-10 offset-sm-2">
-                        <p>Participating in the NASA Competition "<a href='https://www.drivendata.org/competitions/89/competition-nasa-airport-configuration/page/420/'><em>Run-way Functions: Predict Reconfigurations at US Airports (Open Arena)</em></a>".</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
                         <h4>NASA ILASMS</h4>
                     </div>
                     <div class="col-12 col-sm-10 offset-sm-2">
@@ -44,6 +35,14 @@ function Research() {
 
             <h2>Previous</h2>
             <hr/>
+            <div class="row">
+                    <div class="col-12">
+                        <h4>NASA Competition: Runway Configuration Prediction</h4>
+                    </div>
+                    <div class="col-12 col-sm-10 offset-sm-2">
+                        <p>Participating in the NASA Competition "<a href='https://www.drivendata.org/competitions/89/competition-nasa-airport-configuration/page/420/'><em>Run-way Functions: Predict Reconfigurations at US Airports (Open Arena)</em></a>".</p>
+                    </div>
+                </div>
 
         </div>      
     </div>
