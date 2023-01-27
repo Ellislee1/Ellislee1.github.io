@@ -1,0 +1,32 @@
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0);
+}
+
+img {
+    width: 30%;
+    overflow-y: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.code-block {
+    white-space: pre-line;
+    max-height: 20vh;
+    overflow-y: auto;
+}
+
+.code {
+    background-color: rgb(233, 233, 233);
+    color: rgb(0, 0, 0);
+    border-radius:5px;
+    padding: 15px;
+    width: 100%;
+}
+
