@@ -30,3 +30,22 @@ img {
     width: 100%;
 }
 
+.university{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.degree-level {
+    font-style: italic;
+}
+
+.date{
+    font-style: italic;
+    text-align: right;
+}
+
+.advisor {
+    font-style: italic;
+    margin-left: 5%;
+}
+
