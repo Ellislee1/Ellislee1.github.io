@@ -24,6 +24,10 @@ img {
     overflow-y: auto;
 }
 
+.cv {
+    padding-bottom: 40px;
+}
+
 .code {
     background-color: rgb(233, 233, 233);
     color: rgb(0, 0, 0);
