@@ -1,0 +1,138 @@
+let currentQuestion = 0;
+let score = 0;
+let shuffledQuestions = [];
+let correctAnswerIndex = null;
+let selectedTopic = null;
+
+const topicForm = document.getElementById("topic-form");
+const questionContainer = document.getElementById("question-container");
+const questionText = document.getElementById("question-text");
+const answerForm = document.getElementById("answer-form");
+const answersContainer = document.getElementById("answers");
+const nextButton = document.getElementById("next-button");
+const startButton = document.getElementById("start-button");
+
+// Function to shuffle an array
+function shuffleArray(array) {
+    const shuffledArray = [...array];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray;
+}
+
+// Function to display a question
+function showQuestion() {
+    if (currentQuestion < shuffledQuestions.length) {
+        const question = shuffledQuestions[currentQuestion];
+        questionText.textContent = question.question;
+        correctAnswer = question.answers[question.correct];
+
+        // Clear previous answers
+        answersContainer.innerHTML = "";
+
+        const shuffledAnswers = shuffleArray(question.answers);
+
+        // Create radio buttons for each answer
+        shuffledAnswers.forEach((answer, index) => {
+            const answerElement = document.createElement("div");
+            answerElement.className = "answer";
+            const radioButton = document.createElement("input");
+            radioButton.type = "radio";
+            radioButton.name = "answer";
+            radioButton.id = `answer-${index}`;
+            radioButton.value = index;
+            const label = document.createElement("label");
+            label.htmlFor = `answer-${index}`;
+            label.textContent = answer;
+
+            answerElement.appendChild(radioButton);
+            answerElement.appendChild(label);
+
+            answersContainer.appendChild(answerElement);
+
+            if (answer == correctAnswer){
+                correctAnswerIndex = index;
+            };
+        });
+
+        // Enable the "Next" button
+        nextButton.removeAttribute("disabled");
+        nextButton.style.display = "block";
+    } else {
+        endQuiz();
+    }
+}
+
+// Event listener for topic selection
+topicForm.addEventListener("change", () => {
+    selectedTopic = document.querySelector('input[name="topic"]:checked').value;
+    fetch('ppl_questions.json') // Load JSON data from the external file
+        .then(response => response.json())
+        .then(data => {
+            shuffledQuestions = shuffleArray(data[selectedTopic]);
+            topicForm.style.display = "none";
+            startButton.style.display = "block";
+        })
+        .catch(error => {
+            console.error('Error loading JSON:', error);
+        });
+});
+
+// Event listener for starting the quiz
+startButton.addEventListener("click", () => {
+    currentQuestion = 0;
+    score = 0;
+    startButton.style.display = "none";
+    questionContainer.style.display = "block";
+    showQuestion();
+});
+
+// Event listener for checking answers and advancing to the next question
+nextButton.addEventListener("click", () => {
+    const selectedAnswerIndex = document.querySelector('input[name="answer"]:checked');
+
+    if (selectedAnswerIndex !== null) {
+        if (parseInt(selectedAnswerIndex.value) === correctAnswerIndex) {
+            score++;
+        }
+
+        currentQuestion++;
+        showQuestion();
+
+        // Clear the selected answer
+        document.querySelector('input[name="answer"]:checked').checked = false;
+    }
+});
+
+// Function to end the quiz
+function endQuiz() {
+    questionContainer.innerHTML = `<h2>Quiz Completed!</h2><p>Your Score: ${score} / ${shuffledQuestions.length}</p>`;
+    nextButton.style.display = "none";
+}
+
+// Event listener for loading topics when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('ppl_questions.json') // Load JSON data from the external file
+        .then(response => response.json())
+        .then(data => {
+            // Populate the topic selection options from JSON data
+            Object.keys(data).forEach((topic) => {
+                const topicOption = document.createElement("input");
+                topicOption.type = "radio";
+                topicOption.name = "topic";
+                topicOption.id = `topic-${topic}`;
+                topicOption.value = topic;
+                const label = document.createElement("label");
+                label.htmlFor = `topic-${topic}`;
+                label.textContent = topic;
+
+                topicForm.appendChild(topicOption);
+                topicForm.appendChild(label);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading JSON:', error);
+        });
+});

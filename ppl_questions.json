@@ -1,0 +1,21 @@
+{
+    "Air Law and Legislation":[
+        {
+            "question":"The Chicago Convention was signed in _____. This led to the formation of ICAO which is based in _____.",
+            "answers": ["1944, Montreal", "1943, Qubec", "1944 Chicago", "1948, Montreal"],
+            "correct": 0
+        },
+        {
+            "question": "The principals of the ICAO as laid down by the Chicago Convention are known as _____.",
+            "answers": ["Annexes", "Articles", "Addendums", "Parts"],
+            "correct": 1
+        }
+    ],
+    "Rules of the Air":[
+        {
+            "question":"The UK Rules of the Air apply to all UK-registered aircraft:",
+            "answers":["wherever they may be.", "only when in UK airspace", "only when in UK airspace and near offshore installations."],
+            "correct":0
+        }
+    ]
+}
