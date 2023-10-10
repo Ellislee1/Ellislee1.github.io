@@ -19,9 +19,39 @@
             "question": "Each nation (State) that has signed the Chicago Convention (has/has not) exclusive sovereignty over the airspace above its territory.",
             "answers": ["has", "has not"],
             "correct":0
+        },
+        {
+            "question":"A State's sovereignty over its territory (is/is not) considered the waters adjacent to its land areas",
+            "answers":["is", "is not"],
+            "correct":0
+        },
+        {
+            "question":"Other than scheduled international flights, a member State (will/will not) allow aircraft from another State to fly into or through its airspace and onto land without prior permission.",
+            "answers":["will", "will not"],
+            "correct": 0
+        },
+        {
+            "question":"Irrespective of its nationality an aircraft on an internation flight (should/must) obey the regulations of the overflow State.",
+            "answers":["should", "must"],
+            "correct": 1
+        },
+        {
+            "question":"An aircraft operating within a State's territory must follow the rules of the air. Over the high seas these rules (do/do not) apply.",
+            "answers":["do", "do not"],
+            "correct": 0
+        },
+        {
+            "question":"Each State (does/does not) have the right to search aircraft from other States on landing or prior to departure.",
+            "answers":["does", "does not"],
+            "correct":0
+        },
+        {
+            "question":"Each State (may/may not) require aircraft entering its territory to land at a customs airport for a customs examination unless the flight has permission to cross its territory without landing",
+            "answers":["may", "may not"],
+            "correct":0
         }
     ],
-    
+
     "Rules of the Air":[
         {
             "question":"The UK Rules of the Air apply to all UK-registered aircraft:",
