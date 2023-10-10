@@ -31,7 +31,7 @@
             "correct": 0
         },
         {
-            "question":"Irrespective of its nationality an aircraft on an internation flight (should/must) obey the regulations of the overflow State.",
+            "question":"Irrespective of its nationality an aircraft on an internationl flight (should/must) obey the regulations of the overflown State.",
             "answers":["should", "must"],
             "correct": 1
         },
