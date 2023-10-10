@@ -32,7 +32,7 @@ function showQuestion() {
         // Clear previous answers
         answersContainer.innerHTML = "";
 
-        const shuffledAnswers = shuffleArray(question.answers);
+        shuffledAnswers = shuffleArray(question.answers);
 
         // Create radio buttons for each answer
         shuffledAnswers.forEach((answer, index) => {
@@ -84,6 +84,7 @@ topicForm.addEventListener("change", () => {
 startButton.addEventListener("click", () => {
     currentQuestion = 0;
     score = 0;
+    givenAnswers = []
     startButton.style.display = "none";
     questionContainer.style.display = "block";
     showQuestion();
@@ -92,7 +93,8 @@ startButton.addEventListener("click", () => {
 // Event listener for checking answers and advancing to the next question
 nextButton.addEventListener("click", () => {
     const selectedAnswerIndex = document.querySelector('input[name="answer"]:checked');
-
+    givenAnswers.push(shuffledAnswers[parseInt(selectedAnswerIndex.value)])
+    console.log(parseInt(selectedAnswerIndex.value))
     if (selectedAnswerIndex !== null) {
         if (parseInt(selectedAnswerIndex.value) === correctAnswerIndex) {
             score++;
@@ -108,9 +110,57 @@ nextButton.addEventListener("click", () => {
 
 // Function to end the quiz
 function endQuiz() {
-    questionContainer.innerHTML = `<h2>Quiz Completed!</h2><p>Your Score: ${score} / ${shuffledQuestions.length}</p>`;
+    // Clear the question container
+    questionContainer.innerHTML = '';
+
+    // Create a container for displaying the results
+    const resultsContainer = document.createElement("div");
+    resultsContainer.className = "results-container";
+
+    // Display the user's score
+    const scoreText = document.createElement("h2");
+    scoreText.textContent = `Quiz Completed! Your Score: ${score} / ${shuffledQuestions.length}`;
+    resultsContainer.appendChild(scoreText);
+
+    // Iterate through all attempted questions
+    shuffledQuestions.forEach((question, questionIndex) => {
+        const questionResult = document.createElement("div");
+        questionResult.className = "question-result";
+
+        const userAnswerIndex = document.querySelector(`input[name="answer-${questionIndex}"]:checked`);
+        const userAnswerText = givenAnswers[questionIndex];
+        const correctAnswerText = question.answers[question.correct];
+        
+        // Display the question text
+        const questionTextElement = document.createElement("p");
+        questionTextElement.innerHTML = `<b>Question ${questionIndex + 1}: ${question.question}</b>(${(userAnswerText == correctAnswerText) ? "Correct" :"Incorrect"})`;
+        questionResult.appendChild(questionTextElement);
+
+        // Display the user's answer
+        
+        const userAnswerElement = document.createElement("p");
+        userAnswerElement.textContent = `Your Answer: ${userAnswerText}`;
+        questionResult.appendChild(userAnswerElement);
+
+        // Display the correct answer and highlight it in green
+        const correctAnswerElement = document.createElement("p");
+        correctAnswerElement.textContent = `Correct Answer: ${correctAnswerText}`;
+        if (userAnswerIndex && userAnswerIndex.value == question.correct) {
+            correctAnswerElement.style.color = "green"; // Highlight correct answer
+        }
+        questionResult.appendChild(correctAnswerElement);
+
+        resultsContainer.appendChild(questionResult);
+    });
+
+    // Append the results container to the question container
+    questionContainer.appendChild(resultsContainer);
+
+    // Hide the "Next" button
     nextButton.style.display = "none";
 }
+
+
 
 // Event listener for loading topics when the page loads
 document.addEventListener("DOMContentLoaded", () => {

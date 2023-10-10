@@ -9,8 +9,19 @@
             "question": "The principals of the ICAO as laid down by the Chicago Convention are known as _____.",
             "answers": ["Annexes", "Articles", "Addendums", "Parts"],
             "correct": 1
+        },
+        {
+            "question": "Definitive documents relating to the ICAO Articles are known as _____.",
+            "answers":["Annexes", "Articles", "Addendums", "Parts"],
+            "correct": 0
+        },
+        {
+            "question": "Each nation (State) that has signed the Chicago Convention (has/has not) exclusive sovereignty over the airspace above its territory.",
+            "answers": ["has", "has not"],
+            "correct":0
         }
     ],
+    
     "Rules of the Air":[
         {
             "question":"The UK Rules of the Air apply to all UK-registered aircraft:",
