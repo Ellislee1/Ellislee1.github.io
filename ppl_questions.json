@@ -113,6 +113,42 @@
                 "Cancels a previous NOTAM.",
                 "Continues a previous NOTAM."],
             "correct":2
+        },
+        {
+            "question":"Aircraft landing in another State's territory (is/is not) normally exampt from customs duty on fuel, oil, spare parts and stores that were on board on arival and are retained on board on departure.",
+            "answers":["is", "is not"],
+            "correct":0
+        }
+    ],
+    "Rules of the Air": [
+        {
+            "question":"The ultimate responsibility for taking all possible measures to avoide collision between aircraft lies with:",
+            "answers":["Air Traffic Control.", "The Pilot-in-Command.","The most highly qualified pilot on board.","The Air/Ground Communications Operator."],
+            "correct":1
+        },
+        {
+            "question":"In the air, when two aircraft are approaching head on, or approximetly so:",
+            "answers":["Each aircraft will alter course to the right in order to pass well clear.",
+                "Each aircraft will alter course to the left in order to pass well clear.",
+                "The aircraft with greater speed has right of way.",
+                "The aircraft may turn left or right accroding to the perticular cirumstances in order to pass well clear."],
+            "correct":0
+        },
+        {
+            "question":"The minimum height to fly over the congested areas of cities, towns or settlements or over an open-air assembly of persons is:",
+            "answers":["600 m (2,000 ft) above the heighest obstacle within a radius of 600 m from the aircraft.",
+                "300 m (1,000 ft) above the heighest obstacle within a radius of 600 m from the aircraft.",
+                "600 m (2,000 ft) above the heighest obstacle within a radius of 300 m from the aircraft.",
+                "300 m (1,000 ft) above the heighest obstacle within a radius of 300 m from the aircraft."],
+            "correct": 1
+        },
+        {
+            "question": "In relation to converging aircraft in the air, the correct order is:",
+            "answers":["Balloons ,ust give way to airships ans sailplanes.",
+                "Sailplanes must give way to powered aircraft, airships, and balloons.",
+                "Powered aircraft must give way to airships, sailplanes and balloons.",
+                "Airships must give way to powered aircraft, sailplanes and balloons."],
+            "correct":2
         }
     ]
 
