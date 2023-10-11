@@ -118,11 +118,122 @@
             "question":"Aircraft landing in another State's territory (is/is not) normally exampt from customs duty on fuel, oil, spare parts and stores that were on board on arival and are retained on board on departure.",
             "answers":["is", "is not"],
             "correct":0
+        },
+        {
+            "question":"Spare parts imported into a State for use by an aircraft from another State on international operations (will/ will not) be free from duty.",
+            "answers": ["will","will not"],
+            "correct":0
+        },
+        {
+            "question":"Should an aircraft registered in one State be involved in an accident in another State, the State in which the accident occurs (shall/ shall not) run an inquiry.",
+            "answers": ["shall", "shall not"],
+            "correct":0
+        },
+        {
+            "question":"Should an aircraft registered in one State be involved in an accident in another State, the State in which the aircraft is registered (shall/ shall not) be allowed to observe the inquiry.",
+            "answers": ["shall", "shall not"],
+            "correct":0
+        },
+        {
+            "question":"For aircraft that have failed to meet any international standard of airworthiness at certification:",
+            "answers":["Shall show on its certification of airworthiness, full details of any failure(s).",
+                "Shall show on its certification of airworthiness, details of any failure(s) if not rectified within 3 months.",
+                "Is not required to show details of any failure(s).",
+                "Shall show on its certification of airworthiness, details of any failure(s) if not rectified within 6 months."],
+            "correct":0
+        },
+        {
+            "question": "What does ICAO stand for?",
+            "answers": ["International Civil Aviation Organization", "International Civil Air Operations", "International Correspondence for Air Operations",
+                "International Communication for Aviation Organizations"],
+            "correct":0
+        },
+        {
+            "question":"Official information regarding The Rules of the Air nd Air Traffic Services is found in the _____ section of the UK __________.",
+            "answers": ["ENR, UK Aeronautical Information publication", "GEN, UK Aeronautical Information publication", 
+                    "AD, UK Aeronautical Information publication", "Pink, UK Air Information Circular"],
+            "correct": 0
+        },
+        {
+            "question": "Concerning Aeronautical Information Circulars (AICs), the Air Safety AICs are usually printed on _____ coloured paper.",
+            "answers": ["pink", "green", "white", "mauve"],
+            "correct":0
+        },
+        {
+            "question": "Concerning Aeronautical Information Circulars (AICs), the Administrative AICs are usually printed on _____ coloured paper.",
+            "answers": ["pink", "yellow", "white", "mauve"],
+            "correct":2
+        },
+        {
+            "question": "Concerning Aeronautical Information Circulars (AICs), the Operational and Air Traffic Services AICs are usually printed on _____ coloured paper.",
+            "answers": ["green", "yellow", "white", "mauve"],
+            "correct":1
+        },
+        {
+            "question": "Concerning Aeronautical Information Circulars (AICs), the UK Restrictions Charts AICs are usually printed on _____ coloured paper.",
+            "answers": ["pink", "yellow", "green", "mauve"],
+            "correct":3
+        },
+        {
+            "question": "Concerning Aeronautical Information Circulars (AICs), the Maps/Charts AICs are usually printed on _____ coloured paper.",
+            "answers": ["green", "yellow", "white", "mauve"],
+            "correct":0
+        },
+        {
+            "question": "Concerning AIC 127(P 110)/2006: A 10% increase in weight will increase the take-off distance to height 50 ft by ___.",
+            "answers": ["20% (factor 1.2)", "25% (factor 1.25)", "10% (factor 1.1)", "30% (factor 1.3)"],
+            "correct":0
+        },
+        {
+            "question": "Concerning AIC 127(P 110)/2006: A Tailwind Component of 10% of Lift-off Speed will increase the take-off distance to height 50 ft by ___.",
+            "answers": ["20% (factor 1.2)", "25% (factor 1.25)", "10% (factor 1.1)", "30% (factor 1.3)"],
+            "correct":0
+        },
+        {
+            "question": "Concerning AIC 127(P 110)/2006: An increase of 10°C in Ambient Temperature will increase the take-off distance to height 50 ft by ___.",
+            "answers": ["20% (factor 1.2)", "25% (factor 1.25)", "10% (factor 1.1)", "30% (factor 1.3)"],
+            "correct":2
+        },
+        {
+            "question": "Concerning AIC 127(P 110)/2006: Wet Grass- Up to 20 cm (8 in) (on firm soil) will increase the take-off distance to height 50 ft by ___.",
+            "answers": ["20% (factor 1.2)", "25% (factor 1.25)", "10% (factor 1.1)", "30% (factor 1.3)"],
+            "correct":3
+        },
+        {
+            "question": "Concerning AIC 127(P 110)/2006: A Wet paved runway will increase the landing distance to height 50 ft by ___.",
+            "answers": ["10% (factor 1.1)", "5% (factor 1.05)", "35% (factor 1.35)", "25% or more (factor 1.25+)"],
+            "correct":2
+        },
+        {
+            "question": "Concerning AIC 127(P 110)/2006: Wet Grass- Up to 20 cm (8 in) (on firm soil) will increase the landing distance to height 50 ft by ___.",
+            "answers": ["10% (factor 1.1)", "5% (factor 1.05)", "35% (factor 1.35)", "25% or more (factor 1.25+)"],
+            "correct":2
+        },
+        {
+            "question": "Concerning AIC 127(P 110)/2006: Snow will increase the landing distance to height 50 ft by ___.",
+            "answers": ["10% (factor 1.1)", "5% (factor 1.05)", "35% (factor 1.35)", "25% or more (factor 1.25+)"],
+            "correct":3
+        },
+        {
+            "question": "Concerning AIC P 083/2020: A light aircraft departing behind a heavy aircraft using the full length of the same runway should leave _____ for the dispersal of wake turbulence.",
+            "answers": ["3 minutes", "2 minutes", "4 nm or equivilent time", "No wake turbulence seperation minima required."],
+            "correct":0
+        },
+        {
+            "question": "Concerning AIC P 083/2020: A small aircraft departing behind a heavy aircraft but departing from an intermediate part of the same runway should leave _____ for the dispersal of wake turbulence.",
+            "answers": ["3 minutes", "2 minutes", "4 nm or equivilent time", "No wake turbulence seperation minima required."],
+            "correct":1
+        },
+        {
+            "question": "Concerning AIC P 083/2020: A light aircraft departing behind a small aircraft but departing from an intermediate part of the same runway should leave _____ for the dispersal of wake turbulence.",
+            "answers": ["3 minutes", "2 minutes", "4 nm or equivilent time", "No wake turbulence seperation minima required."],
+            "correct":1
         }
+
     ],
     "Rules of the Air": [
         {
-            "question":"The ultimate responsibility for taking all possible measures to avoide collision between aircraft lies with:",
+            "question":"The ultimate responsibility for taking all possible measures to avoid collision between aircraft lies with:",
             "answers":["Air Traffic Control.", "The Pilot-in-Command.","The most highly qualified pilot on board.","The Air/Ground Communications Operator."],
             "correct":1
         },
