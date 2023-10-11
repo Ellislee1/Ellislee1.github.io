@@ -58,8 +58,24 @@
         {
             "question":"Under the terms of the Chicago Convention each contracting State has:",
             "answers":["Shared sovereignty over the airspace above its land and territorial waters.", "Exclusive sovereignty over the airspace above its land borders.",
-        "Exclusive sovereignty over the airspace above its land and territorial waters.","Exclusive sovereignty over airspace above its land borders and shared sovereignty over the airspace above its territorial waters."],
-        "correct":2
+                "Exclusive sovereignty over the airspace above its land and territorial waters.","Exclusive sovereignty over airspace above its land borders and shared sovereignty over the airspace above its territorial waters."],
+            "correct":2
+        },
+        {
+            "question": "With Regard to the Chicago Convention, an aircraft entering the territory of a contracting State:",
+            "answers": ["May be required to land at a customs airport.", "Is always required to land at a customs airport.", 
+                "May be required to land at a port of entry.", "May be required to land and an immigration airport."],
+            "correct":0
+        },
+        {
+            "question": "Aircraft (may/may not) be registered in more than one State.",
+            "answers": ["may", "may not"],
+            "correct": 1
+        },
+        {
+            "question":"Aircraft operating internationally (should/must) display approapriate nationality and registration marks.",
+            "answers": ["should","must"],
+            "correct": 1
         }
     ],
 

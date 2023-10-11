@@ -74,6 +74,10 @@ topicForm.addEventListener("change", () => {
             shuffledQuestions = shuffleArray(data[selectedTopic]);
             
             startButton.style.display = "block";
+            maxQuestions = shuffledQuestions.length
+            numQuestionsSlider.max = maxQuestions
+            numQuestionsSlider.value = (parseInt(numQuestionsSlider.value) <= maxQuestions) ? numQuestionsSlider.value:maxQuestions
+            document.getElementById("selected-num-questions").textContent = parseInt(numQuestionsSlider.value);
         })
         .catch(error => {
             console.error('Error loading JSON:', error);
@@ -88,6 +92,12 @@ startButton.addEventListener("click", () => {
     topicForm.style.display = "none";
     startButton.style.display = "none";
     questionContainer.style.display = "block";
+    const numQuestionsSlider = document.getElementById("num-questions");
+    const numQuestionsValue = parseInt(numQuestionsSlider.value);
+    document.getElementById("selected-num-questions").textContent = numQuestionsValue;
+    shuffledQuestions = shuffledQuestions.slice(0, numQuestionsValue); // Limit to the selected number of questions
+    // console.log(shuffledQuestions.length)
+    // console.log(numQuestionsValue)
     showQuestion();
 });
 
@@ -193,4 +203,11 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => {
             console.error('Error loading JSON:', error);
         });
+});
+
+// Event listener to update the selected number of questions as the slider value changes
+const numQuestionsSlider = document.getElementById("num-questions");
+numQuestionsSlider.addEventListener("input", () => {
+    const numQuestionsValue = parseInt(numQuestionsSlider.value);
+    document.getElementById("selected-num-questions").textContent = numQuestionsValue;
 });

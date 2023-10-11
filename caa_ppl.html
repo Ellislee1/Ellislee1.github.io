@@ -51,7 +51,12 @@
                 <h2>Select a Topic:</h2>
                 <!-- Populate the topic selection options from JSON data -->
                 <div id="topic-options"></div>
+                <p>Select the number of questions:</p>
+                <input type="range" id="num-questions" min="1" max="10" value="1" step="1"> <!-- Adjust the "max" value as needed -->
+                <p id="selected-num-questions">1</p>
             </form>
+            
+            
             <!-- Move the "Start" button here -->
             <button id="start-button" class="btn btn-primary" style="display: none;">Start</button>
             <div id="question-container" style="display: none;">
