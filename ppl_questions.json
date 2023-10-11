@@ -21,7 +21,7 @@
             "correct":0
         },
         {
-            "question":"A State's sovereignty over its territory (is/is not) considered the waters adjacent to its land areas",
+            "question":"A State's sovereignty over its territory (is/is not) considered the waters adjacent to its land areas.",
             "answers":["is", "is not"],
             "correct":0
         },
@@ -46,9 +46,20 @@
             "correct":0
         },
         {
-            "question":"Each State (may/may not) require aircraft entering its territory to land at a customs airport for a customs examination unless the flight has permission to cross its territory without landing",
+            "question":"Each State (may/may not) require aircraft entering its territory to land at a customs airport for a customs examination unless the flight has permission to cross its territory without landing.",
             "answers":["may", "may not"],
             "correct":0
+        },
+        {
+            "question":"Aircraft (do/do not) have the nationality of the State in which they are registered.",
+            "answers": ["do", "do not"],
+            "correct": 0
+        },
+        {
+            "question":"Under the terms of the Chicago Convention each contracting State has:",
+            "answers":["Shared sovereignty over the airspace above its land and territorial waters.", "Exclusive sovereignty over the airspace above its land borders.",
+        "Exclusive sovereignty over the airspace above its land and territorial waters.","Exclusove sovereignty over airspace above its land borders and shared sovereignty over the airspace above its territorial waters."],
+        "correct":2
         }
     ],
 

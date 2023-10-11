@@ -122,6 +122,10 @@ function endQuiz() {
     scoreText.textContent = `Quiz Completed! Your Score: ${score} / ${shuffledQuestions.length}`;
     resultsContainer.appendChild(scoreText);
 
+    const percentageText = document.createElement("h3");
+    percentageText.textContent = `${(score / shuffledQuestions.length)*100}%`
+    resultsContainer.appendChild(percentageText);
+
     // Iterate through all attempted questions
     shuffledQuestions.forEach((question, questionIndex) => {
         const questionResult = document.createElement("div");
