@@ -31,7 +31,7 @@
             "correct": 0
         },
         {
-            "question":"Irrespective of its nationality an aircraft on an internationl flight (should/must) obey the regulations of the overflown State.",
+            "question":"Irrespective of its nationality an aircraft on an international flight (should/must) obey the regulations of the overflown State.",
             "answers":["should", "must"],
             "correct": 1
         },
@@ -112,7 +112,7 @@
                 "Contains new information, and is the third NOTAM issued on a particular day.",
                 "Cancels a previous NOTAM.",
                 "Continues a previous NOTAM."],
-            "correct":3
+            "correct":2
         }
     ]
 
