@@ -62,7 +62,7 @@
             "correct":2
         },
         {
-            "question": "With Regard to the Chicago Convention, an aircraft entering the territory of a contracting State:",
+            "question": "With regard to the Chicago Convention, an aircraft entering the territory of a contracting State:",
             "answers": ["May be required to land at a customs airport.", "Is always required to land at a customs airport.", 
                 "May be required to land at a port of entry.", "May be required to land and an immigration airport."],
             "correct":0
@@ -76,14 +76,44 @@
             "question":"Aircraft operating internationally (should/must) display approapriate nationality and registration marks.",
             "answers": ["should","must"],
             "correct": 1
-        }
-    ],
-
-    "Rules of the Air":[
+        },
         {
-            "question":"The UK Rules of the Air apply to all UK-registered aircraft:",
-            "answers":["wherever they may be.", "only when in UK airspace", "only when in UK airspace and near offshore installations."],
-            "correct":0
+            "question":"ICAO requires that an aircraft on an international flight must carry:",
+            "answers":["The Certificate of Airworthiness, Certificate of Registration and the latest Certificate of Maintenance Review.",
+                "The Certificate of Airworthiness, Certificate of Registration, Crew Licences and a journey log book.",
+                "The Certificate of Airworthiness, a current weight and balance and aircraft radio licences.",
+                "The Certificate of Airworthiness, Certificate of Registration, Crew Licences, a journey log book, appropriate radio licences and, if applicable, passenger and cargo manifests."],
+            "correct":3
+        },
+        {
+            "question":"To operate radio transmitting equipment over the territory of a contracting State:",
+            "answers":["The radio operator must be licensed by the state of registry of the aircraft.",
+                "The radio station must be licensed by the state of registry of the aircraft.",
+                "Both the radio station and the operator must be licensed by the state of registry of the aircraft.",
+                "Either the radio station or the operator must be licensed by the state of registry of the aircraft."],
+            "correct":2
+        },
+        {
+            "question":"Each contracting ICAO State:",
+            "answers":["Must gain the permission of the operator in advance before an aircraft is searched.",
+                "Has the right to search and aircraft from other States on landing and prior to departure to inspect documents.",
+                "Has no right to search aircraft from another State.",
+                "Has the right to search aircraft from other States if it is suspected that they are carrying illegal substances."],
+            "correct":1
+        },
+        {
+            "question":"Pink coloured AICs contain information relating to:",
+            "answers":["Administrative matters.","Ait Traffic Services.","UK restrictions charts.","Air safety."],
+            "correct":3
+        },
+        {
+            "question":"A NOTAMC:",
+            "answers":["Contains information relating to a class C hazard to air navigation.",
+                "Contains new information, and is the third NOTAM issued on a particular day.",
+                "Cancels a previous NOTAM.",
+                "Continues a previous NOTAM."],
+            "correct":3
         }
     ]
+
 }
