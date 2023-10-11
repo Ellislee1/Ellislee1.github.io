@@ -228,7 +228,60 @@
             "question": "Concerning AIC P 083/2020: A light aircraft departing behind a small aircraft but departing from an intermediate part of the same runway should leave _____ for the dispersal of wake turbulence.",
             "answers": ["3 minutes", "2 minutes", "4 nm or equivilent time", "No wake turbulence seperation minima required."],
             "correct":1
+        },
+        {
+            "question": "Concerning AIC P 083/2020: A medium aircraft departing behind a super aircraft using the full length of the same runway should leave _____ for the dispersal of wake turbulence.",
+            "answers": ["3 minutes", "2 minutes", "4 nm or equivilent time", "No wake turbulence seperation minima required."],
+            "correct":0
+        },
+        {
+            "question": "Concerning AIC P 083/2020: Unless alternative wake turbulence separation criteria have been approved for use, the UK wake turbulence separation minima are applied when",
+            "answers": ["An aircraft is operating directly behind another aircraft at the same altitude or less than 1000 FT below.", 
+                    "An aircraft is crossing behind another aircraft at the same altitude or less than 1000 FT below.", 
+                    "Both aircraft are using the same runway or parallel runways separated by less than 760 M (2500 FT)", 
+                    "All cases mentioned."],
+            "correct":3
+        },
+        {
+            "question": "Concerning AIC P 083/2020: A light aircraft landing behind a heavy aircraft should leave _____ for the dispersal of wake turbulence.",
+            "answers": ["3 minutes.", 
+                    "7nm (6nm ICAO)", 
+                    "4nm (4nm ICAO)", 
+                    "6nm (7nm ICAO)"],
+            "correct":1
+        },
+        {
+            "question": "Concerning AIC P 083/2020: A small aircraft landing behind a lower medium aircraft should leave _____ for the dispersal of wake turbulence.",
+            "answers": ["3 minutes.", 
+                    "7nm (6nm ICAO)", 
+                    "4nm (4nm ICAO)", 
+                    "3nm"],
+            "correct":3
+        },
+        {
+            "question": "A pilot should not fly for at least _____ after taking small amounts of alcohol, and proportionally longer if larger amounts are consumed.",
+            "answers": ["8 hours", 
+                    "6 hours", 
+                    "24 hours", 
+                    "12 hours"],
+            "correct":0
+        },
+        {
+            "question": "AVGAS filler points should be painted _____ to avoid confusion with turbine filler points.",
+            "answers": ["Red", "Orange", "Black", "Red/Orange and White"],
+            "correct": 0
+        },
+        {
+            "question": "AVTUR filler points should be painted _____ to avoid confusion with gasoline filler points.",
+            "answers": ["Red", "Orange", "Black", "Red/Orange and White"],
+            "correct": 2
+        },
+        {
+            "question": "The Air Navigation Order (ANO) is sub-divided into _____ which consist of _____ numbered consecutively.",
+            "answers": ["Parts, Articles", "Parts, appendices", "Chapters, Sections", "Chapters, Articles"],
+            "correct": 0
         }
+
 
     ],
     "Rules of the Air": [
