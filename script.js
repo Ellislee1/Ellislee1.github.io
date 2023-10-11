@@ -72,7 +72,7 @@ topicForm.addEventListener("change", () => {
         .then(response => response.json())
         .then(data => {
             shuffledQuestions = shuffleArray(data[selectedTopic]);
-            topicForm.style.display = "none";
+            
             startButton.style.display = "block";
         })
         .catch(error => {
@@ -84,7 +84,8 @@ topicForm.addEventListener("change", () => {
 startButton.addEventListener("click", () => {
     currentQuestion = 0;
     score = 0;
-    givenAnswers = []
+    givenAnswers = [];
+    topicForm.style.display = "none";
     startButton.style.display = "none";
     questionContainer.style.display = "block";
     showQuestion();
@@ -94,7 +95,6 @@ startButton.addEventListener("click", () => {
 nextButton.addEventListener("click", () => {
     const selectedAnswerIndex = document.querySelector('input[name="answer"]:checked');
     givenAnswers.push(shuffledAnswers[parseInt(selectedAnswerIndex.value)])
-    console.log(parseInt(selectedAnswerIndex.value))
     if (selectedAnswerIndex !== null) {
         if (parseInt(selectedAnswerIndex.value) === correctAnswerIndex) {
             score++;
@@ -104,7 +104,7 @@ nextButton.addEventListener("click", () => {
         showQuestion();
 
         // Clear the selected answer
-        document.querySelector('input[name="answer"]:checked').checked = false;
+        // document.querySelector('input[name="answer"]:checked').checked = false;
     }
 });
 
@@ -123,7 +123,7 @@ function endQuiz() {
     resultsContainer.appendChild(scoreText);
 
     const percentageText = document.createElement("h3");
-    percentageText.textContent = `${(score / shuffledQuestions.length)*100}%`
+    percentageText.textContent = `${Math.round((score / shuffledQuestions.length)*1000)/10}%`
     resultsContainer.appendChild(percentageText);
 
     // Iterate through all attempted questions
@@ -166,25 +166,29 @@ function endQuiz() {
 
 
 
+function populateTopicOptions(data) {
+    const topicOptions = document.getElementById("topic-options");
+    Object.keys(data).forEach((topic) => {
+        const topicOption = document.createElement("input");
+        topicOption.type = "radio";
+        topicOption.name = "topic";
+        topicOption.id = `topic-${topic}`;
+        topicOption.value = topic;
+        const label = document.createElement("label");
+        label.htmlFor = `topic-${topic}`;
+        label.textContent = topic;
+
+        topicOptions.appendChild(topicOption);
+        topicOptions.appendChild(label);
+    });
+}
+
 // Event listener for loading topics when the page loads
 document.addEventListener("DOMContentLoaded", () => {
     fetch('ppl_questions.json') // Load JSON data from the external file
         .then(response => response.json())
         .then(data => {
-            // Populate the topic selection options from JSON data
-            Object.keys(data).forEach((topic) => {
-                const topicOption = document.createElement("input");
-                topicOption.type = "radio";
-                topicOption.name = "topic";
-                topicOption.id = `topic-${topic}`;
-                topicOption.value = topic;
-                const label = document.createElement("label");
-                label.htmlFor = `topic-${topic}`;
-                label.textContent = topic;
-
-                topicForm.appendChild(topicOption);
-                topicForm.appendChild(label);
-            });
+            populateTopicOptions(data);
         })
         .catch(error => {
             console.error('Error loading JSON:', error);

@@ -42,26 +42,29 @@
     </header>
 
     <main>
-    <div class="m-3 text-center">
-        <h1 class="display-1 text-center">CAA PPL Practice Questions</h1>
-    </div>
-
-    <div id="quiz-container" class="container">
-        <form id="topic-form">
-            <h2>Select a Topic:</h2>
-            <!-- Populate the topic selection options from JSON data -->
-        </form>
-        <div id="question-container" style="display: none;">
-            <p id="question-text"></p>
-            <form id="answer-form">
-                <div id="answers"></div>
-            </form>
+        <div class="m-3 text-center">
+            <h1 class="display-1 text-center">CAA PPL Practice Questions</h1>
         </div>
-        <!-- Add an "id" attribute to the "Start" button -->
-        <button id="start-button" class="btn btn-primary" style="display: none;">Start</button>
-        <button id="next-button" class="btn btn-primary" style="display: none;">Next</button>
-    </div>
-</main>
+    
+        <div id="quiz-container" class="container">
+            <form id="topic-form">
+                <h2>Select a Topic:</h2>
+                <!-- Populate the topic selection options from JSON data -->
+                <div id="topic-options"></div>
+            </form>
+            <!-- Move the "Start" button here -->
+            <button id="start-button" class="btn btn-primary" style="display: none;">Start</button>
+            <div id="question-container" style="display: none;">
+                <p id="question-text"></p>
+                <form id="answer-form">
+                    <div id="answers"></div>
+                </form>
+                <button id="next-button" class="btn btn-primary" style="display: none;">Next</button>
+            </div>
+        </div>
+    </main>
+    
+    
 
     
     
