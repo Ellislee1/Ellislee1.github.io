@@ -86,6 +86,11 @@ img {
     margin-top: 20px;
 }
 
+.disclaimer-text{
+    font-size: 0.75em;
+    margin-top: 2%;
+}
+
 /* Style the radio buttons to be hidden */
 input[type="radio"] {
     display: none;
