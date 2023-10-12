@@ -26,7 +26,7 @@ function shuffleArray(array) {
 function showQuestion() {
     if (currentQuestion < shuffledQuestions.length) {
         const question = shuffledQuestions[currentQuestion];
-        questionText.textContent = question.question;
+        questionText.textContent = `(${currentQuestion+1}/${numQuestionsValue}) ${question.question}`;
         correctAnswer = question.answers[question.correct];
 
         // Clear previous answers
@@ -68,11 +68,23 @@ function showQuestion() {
 // Event listener for topic selection
 topicForm.addEventListener("change", () => {
     selectedTopic = document.querySelector('input[name="topic"]:checked').value;
-    fetch('ppl_questions.json') // Load JSON data from the external file
+
+    try {
+        shuffledQuestions = shuffleArray(questionData[selectedTopic]);
+
+        startButton.style.display = "block";
+        maxQuestions = shuffledQuestions.length
+        numQuestionsSlider.max = maxQuestions
+        numQuestionsSlider.value = (parseInt(numQuestionsSlider.value) <= maxQuestions) ? numQuestionsSlider.value:maxQuestions
+        document.getElementById("selected-num-questions").textContent = parseInt(numQuestionsSlider.value);
+    } catch (error) {
+        fetch('ppl_questions.json') // Load JSON data from the external file
         .then(response => response.json())
         .then(data => {
-            shuffledQuestions = shuffleArray(data[selectedTopic]);
-            
+            questionData = data;
+
+            shuffledQuestions = shuffleArray(questionData[selectedTopic]);
+
             startButton.style.display = "block";
             maxQuestions = shuffledQuestions.length
             numQuestionsSlider.max = maxQuestions
@@ -82,6 +94,7 @@ topicForm.addEventListener("change", () => {
         .catch(error => {
             console.error('Error loading JSON:', error);
         });
+    }
 });
 
 // Event listener for starting the quiz
@@ -93,7 +106,7 @@ startButton.addEventListener("click", () => {
     startButton.style.display = "none";
     questionContainer.style.display = "block";
     const numQuestionsSlider = document.getElementById("num-questions");
-    const numQuestionsValue = parseInt(numQuestionsSlider.value);
+    numQuestionsValue = parseInt(numQuestionsSlider.value);
     document.getElementById("selected-num-questions").textContent = numQuestionsValue;
     shuffledQuestions = shuffledQuestions.slice(0, numQuestionsValue); // Limit to the selected number of questions
     // console.log(shuffledQuestions.length)
@@ -132,8 +145,8 @@ function endQuiz() {
     scoreText.textContent = `Quiz Completed! Your Score: ${score} / ${shuffledQuestions.length}`;
     resultsContainer.appendChild(scoreText);
 
-    const percentageText = document.createElement("h3");
-    percentageText.textContent = `${Math.round((score / shuffledQuestions.length)*1000)/10}%`
+    const percentageText = document.createElement("h4");
+    percentageText.textContent = `Thats ${Math.round((score / shuffledQuestions.length)*1000)/10}%, you only need 75% to pass.`
     resultsContainer.appendChild(percentageText);
 
     // Iterate through all attempted questions
@@ -195,10 +208,12 @@ function populateTopicOptions(data) {
 
 // Event listener for loading topics when the page loads
 document.addEventListener("DOMContentLoaded", () => {
+
     fetch('ppl_questions.json') // Load JSON data from the external file
         .then(response => response.json())
         .then(data => {
-            populateTopicOptions(data);
+            questionData = data;
+            populateTopicOptions(questionData);
         })
         .catch(error => {
             console.error('Error loading JSON:', error);
