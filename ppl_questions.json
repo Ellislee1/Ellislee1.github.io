@@ -313,7 +313,29 @@
                 "Powered aircraft must give way to airships, sailplanes and balloons.",
                 "Airships must give way to powered aircraft, sailplanes and balloons."],
             "correct":2
+        },
+        {
+            "question": "The UK Rules of the Air apply to all UK-registered aircraft:",
+            "answers":["Wherever they may be.", "Only when in UK airspace.", "Only when in UK airspace and neer offshore installations."],
+            "correct":0
+        },
+        {
+            "question": "When two aircraft are on a conbverginc course, the aircraft with the right of way should:",
+            "answers": ["Maintain current heading and speed.", "Slow down to allow the other to take corrective action.", "Turn to the right."],
+            "correct":0
+        },
+        {
+            "question": "An aircraft which is obliged to give way to another aircraft must avoid passing: _____ or _____ or _____, unless passing well clear or it.",
+            "answers": ["infront of, overhead, directly below", "behind, within 2nm, infront of", "infront of, behind, overhead"],
+            "correct": 0
+        },
+        {
+            "question": "An overtaking situation is said to occure when the overtaking aircraft is within ____ degrees of the overtaken aircraft's centerline.",
+            "answers": ["70", "120", "30", "100"],
+            "correct":0
         }
+
+
     ]
 
 }
